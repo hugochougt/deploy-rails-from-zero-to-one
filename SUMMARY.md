@@ -2,3 +2,4 @@
 
 * [README](README.md)
 * [Tech Stack](tech-stack.md)
+* [Create Rails App](create-rails-app.md)
