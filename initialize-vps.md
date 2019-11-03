@@ -34,7 +34,7 @@ $ sudo adduser deploy
 root    ALL=(ALL:ALL) ALL
 ```
 
-在其后新增一行配置，按 `CRTL+X` 保存文件。
+在其后新增一行配置，先按 `CTRL+O`，然后按 `CRTL+X` 保存文件并退出编辑。
 
 ```
 root    ALL=(ALL:ALL) ALL
