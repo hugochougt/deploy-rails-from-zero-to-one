@@ -6,17 +6,17 @@
 
 ## Web Server
 
-- [NGINX](https://www.nginx.com)
+- [NGINX 1.14.0](https://www.nginx.com)
 
 ## Ruby on Rails
 
-- [Ruby 2.6](https://www.ruby-lang.org)
-- [Rails 6](https://rubyonrails.org)
+- [Ruby 2.6.5](https://www.ruby-lang.org)
+- [Rails 6.0.0](https://rubyonrails.org)
 
 ## Database
 
-- [PostgreSQL](https://www.postgresql.org/)
+- [PostgreSQL 12.0](https://www.postgresql.org/)
 
 ## Deployment
 
-- [Capistrano](https://github.com/capistrano/capistrano)
+- [Capistrano 3.x](https://github.com/capistrano/capistrano)
