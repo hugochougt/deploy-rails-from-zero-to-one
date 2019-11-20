@@ -18,6 +18,15 @@ $ node -v
 # => v8.10.0
 ```
 
+[Install yarn](https://yarnpkg.com/en/docs/install)
+
+```bash
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install yarn
+```
+
+
 ## RVM
 
 参考：[ubuntu_rvm](https://github.com/rvm/ubuntu_rvm)
@@ -77,6 +86,7 @@ $ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -c
 $ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 $ sudo apt-get update
 $ sudo apt-get install postgresql postgresql-contrib -y
+$ sudo apt-get install libpq-dev -y # To build `pg` gem native extension
 ```
 
 安装成功后，系统会创建多一个名为 `postgres` 的系统用户，并且创建名为 `postgres` 的数据库用户。执行以下命令检查 pg 是否正常。
