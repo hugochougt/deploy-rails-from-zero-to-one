@@ -7,3 +7,4 @@
 * [Initialize VPS](initialize-vps.md)
 * [Setup Server](setup-server.md)
 * [Config Capistrano](config-capistrano.md)
+* [Config SSL](config-ssl.md)
