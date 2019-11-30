@@ -28,7 +28,7 @@ $ sudo adduser deploy
 
 ![adduser deploy](images/adduser-deploy.png)
 
-根据提示输入密码等信息。然后在命令行输入 `visudo` 为 deploy 用户设置 sudo 权限。`visudo` 命令会打开 `/etc/sudoers` 文件，找到下方那一行内容。
+根据提示输入密码等信息。然后在命令行输入 `sudo visudo` 为 deploy 用户设置 sudo 权限。`visudo` 命令会打开 `/etc/sudoers` 文件，找到下方那一行内容。
 
 ```
 root    ALL=(ALL:ALL) ALL
@@ -40,6 +40,17 @@ root    ALL=(ALL:ALL) ALL
 root    ALL=(ALL:ALL) ALL
 deploy  ALL=(ALL) NOPASSWD:ALL
 ```
+
+这里编辑 `/etc/sudoers` 文件一定得通过 `sudo visudo` 命令来进行。因为文件的开头有一个温馨提示：
+
+```
+$ sudo head -n 3 /etc/sudoers
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+```
+
+如果你通过其他编辑器来修改 `/etc/sudoers` 文件并且出错了，那就没办法修正错误了，因为你再也没权限编辑这个文件。
 
 然后新开一个 terminal 窗口，执行下面的命令确保新用户可以登录。
 
