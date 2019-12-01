@@ -15,3 +15,5 @@
 Or buy me a coffee ;)
 
 ![Alipay](images/alipay.jpg)
+
+示例网站 `https://deploy-demo.zq-dev.com/` 会在 2019 年结束的时候下线。
