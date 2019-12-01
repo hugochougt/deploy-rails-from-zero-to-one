@@ -1,4 +1,6 @@
-# Config SSL
+# 配置 HTTPS
+
+参考：[使用 acme.sh 给 Nginx 安装 Let’ s Encrypt 提供的免费 SSL 证书](https://ruby-china.org/topics/31983)
 
 我们使用 [acme.sh](https://github.com/Neilpang/acme.sh) 脚本来配置 SSL。
 
@@ -101,7 +103,7 @@ server {
 
 cd 进入 `/var/www/rails-deployment-demo/ssl/` 目录并执行 `openssl dhparam -out dhparam.pem 4096` 命令，这个命令执行时间会比较长，可能需要 15 ~ 20 分钟。
 
-然后再次编辑 `/etc/nginx/sites-enabled/deploy-demo.zq-dev.com.conf` 文件。
+然后再次编辑 `/etc/nginx/sites-enabled/deploy-demo.zq-dev.com.conf` 文件，修改为以下内容。
 
 ```
 upstream deploy-demo {
@@ -130,7 +132,7 @@ server {
 
   root /var/www/rails-deployment-demo/current/public;
   try_files $uri/index.html $uri @deploy-demo;
-  client_max_body_size 4G;
+  client_max_body_size 1G;
   keepalive_timeout 120;
 
   location @deploy-demo {
@@ -159,7 +161,7 @@ server {
 }
 ```
 
-保存后再次执行 `nginx -t` 检查配置是否有问题，没问题的话执行 `service nginx restart` 重启 nginx。
+保存后再次执行 `nginx -t` 检查配置是否有问题，没问题的话执行 `service nginx restart` 重启 NGINX。
 
 再次到浏览器刷新页面，即可强制 HTTPS 访问了。
 
@@ -171,7 +173,7 @@ server {
 
 ### 检查证书更新
 
-因为 Let's Encrypt 的证书有效期只有 90 天，所以我们需要配置定时认为在证书过期更新证书。这部分配置 acme.sh 已经帮你做了的。执行 `crontab -l` 查看定时任务，正常会输出以下内容。
+因为 Let's Encrypt 的证书有效期只有 90 天，所以我们需要配置定时任务在证书过期更新证书。这部分配置 acme.sh 已经帮你做了的。执行 `crontab -l` 查看定时任务，正常会输出以下内容。
 
 ```
 58 0 * * * "/root/.acme.sh"/acme.sh --cron --home "/root/.acme.sh" > /dev/null

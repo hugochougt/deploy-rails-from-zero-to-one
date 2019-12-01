@@ -1,8 +1,8 @@
-# Blog Feature
+# 简易博客功能
 
-为 rails app 增加一个简单的博客功能，不至于让应用只有一个 landing page。
+为 Rails app 增加一个简单的博客功能，不至于让应用只有一个 landing page。
 
-## 创建 Blog 脚手架
+## 创建 Posts 脚手架
 
 ```
 rails generate scaffold post

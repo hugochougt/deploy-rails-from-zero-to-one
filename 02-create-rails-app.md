@@ -1,4 +1,4 @@
-# Create Rails App
+# 创建 Rails App
 
 要部署 Rails 应用，第一步就是先创建它。本文会创建一个用于演示的 Rails demo app。
 
@@ -6,7 +6,7 @@
 
 ### 确认本地环境
 
-截至本文写作的当前时间（2019年10月份），最新的 Ruby 版本是 [2.6.5](https://www.ruby-lang.org/en/news/2019/10/01/ruby-2-6-5-released/)。而 Rails 的最新版本是 [6.0.0](https://weblog.rubyonrails.org/2019/8/15/Rails-6-0-final-release/)。
+截至本文写作的当前时间（2019年10月份），最新的 Ruby 版本是 [2.6.5](https://www.ruby-lang.org/en/news/2019/10/01/ruby-2-6-5-released/)，Rails 的最新版本是 [6.0.0](https://weblog.rubyonrails.org/2019/8/15/Rails-6-0-final-release/)。
 
 ```
 $ ruby -v
@@ -21,7 +21,7 @@ $ postgres -V
 # => postgres (PostgreSQL) 11.3
 ```
 
-### `rails new`
+### 创建应用
 
 确认开发环境的依赖都安装好后，可以执行 `rails new` 命令来创建应用。
 
@@ -47,6 +47,4 @@ $ git commit -m 'Init project'
 
 此时你需要在 GitHub 创建一个仓库，并根据 GitHub 的操作提示，把代码推上到仓库里。然后再在 GitHub 上把你本地的 ssh public key 添加到 GitHub。
 
-我把 demo repo 放到了 GitHub 上 [rails-deployment-demo](https://github.com/zhaqiang/rails-deployment-demo)
-
-后续的部署脚本提交记录也会同步到该仓库。
+我把 demo repo 放到了 GitHub 上 [rails-deployment-demo](https://github.com/zhaqiang/rails-deployment-demo)。后续的部署脚本提交记录也会同步到该仓库。

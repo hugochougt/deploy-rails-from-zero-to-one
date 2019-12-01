@@ -1,10 +1,10 @@
-# Initialize VPS
+# 购买并初始化 VPS
 
-部署 rails app 前，需要购买并初始化 VPS。
+部署 Rails app 前，需要购买并初始化 VPS。
 
 ## 购买 VPS
 
-到[阿里云](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=3tfq70ed)（使用我的推广链接注册我可以获得一些优惠券和返利）或者其他 VPS 服务器提供商（例如 [Vultr.com](https://www.vultr.com/?ref=7367765)）注册账号，并购买 VPS。
+到[阿里云](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=3tfq70ed)或者其他 VPS 服务器提供商（例如 [Vultr.com](https://www.vultr.com/?ref=7367765)）注册账号（使用我的推广链接注册我可以获得一些优惠券和返利），并购买 VPS。
 
 配置至少 1 CPU 2 GB 内存，不然部署的时候编译静态资源可能不够内存而导致部署失败。操作系统选 Ubuntu 18.04 64位。
 
@@ -20,7 +20,7 @@ $ ssh username@your-server-ip
 
 ### 2. 创建部署用户
 
-假设我们用于部署 rails app 的新用户名是 `deploy`。（后续会把这个 `deploy` 用户写到 [Capistrano](https://github.com/capistrano/capistrano) 的部署脚本里。）
+假设我们用于部署 rails app 的新用户名是 `deploy`。后续会把这个 `deploy` 用户写到 [Capistrano](https://github.com/capistrano/capistrano) 的部署脚本里。
 
 ```
 $ sudo adduser deploy

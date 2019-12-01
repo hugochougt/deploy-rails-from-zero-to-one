@@ -1,4 +1,6 @@
-# Tech Stack
+# 技术栈
+
+本文所部署的 Rails 应用基于以下技术栈。
 
 ## OS
 
@@ -12,6 +14,7 @@
 
 - [Ruby 2.6.5](https://www.ruby-lang.org)
 - [Rails 6.0.0](https://rubyonrails.org)
+  - App server: [Puma 4.2.1](https://puma.io)
 
 ## Database
 

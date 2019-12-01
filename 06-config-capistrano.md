@@ -1,12 +1,12 @@
-# Config Capistrano
+# 配置 Capistrano 脚本
 
 参考：[Deploying Rails app using Nginx, Puma and Capistrano 3](https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-and-capistrano-3)
 
 进入 Rails app 所在的目录，先从 `master` 分支 `git checkout -b config-capistrano` ，再开始配置 capistrano 脚本。
 
-## Install gems
+## 安装 Cap gems
 
-在 `Gemfile` 文件增加 cap 部署相关的 gem，并且把 `puma` 版本升级到 4，因为 `capistrano3-puma` 要求 `puma` 版本至少是 4.0.0。
+在 `Gemfile` 文件增加 cap 部署相关的 gems，并且把 `puma` 版本升级到 4，因为 `capistrano3-puma` 要求 `puma` 版本至少是 4.0.0。
 
 ```ruby
 # ...
@@ -69,7 +69,7 @@ create Capfile
 Capified
 ```
 
-编辑 `Capfile`，将其内容替换为以下内容。
+编辑 `Capfile`，将其替换为以下内容。
 
 ```ruby
 # frozen_string_literal: true
@@ -173,9 +173,9 @@ namespace :deploy do
 end
 ```
 
-## 配置 deploy files
+## 配置 production.rb 文件
 
-修改 `config/deploy/production.rb` 文件，根据实际情况替换 `app_url` 和 IP 地址为你的服务器的值。
+修改 `config/deploy/production.rb` 文件，根据实际情况替换 `app_url` 和 IP 地址为你服务器的值。
 
 ```ruby
 # frozen_string_literal: true

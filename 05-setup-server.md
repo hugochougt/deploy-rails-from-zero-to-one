@@ -1,6 +1,6 @@
-# Setup Server
+# 配置服务器
 
-初始化服务器之后、部署 Rails 应用前，需要安装相应的依赖软件。
+初始化服务器之后、部署 Rails 应用前，需要配置服务器，安装必要的依赖软件。
 
 ## Git
 
@@ -96,7 +96,7 @@ $ sudo su - postgres
 $ psql
 ```
 
-登录 pg 数据库后，查看登录状态。
+登录 pg 数据库后，查看连接状态。
 
 ```
 postgres-# \conninfo
