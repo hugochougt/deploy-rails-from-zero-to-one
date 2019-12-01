@@ -168,8 +168,8 @@ namespace :deploy do
     end
   end
 
+  after :finishing, :cleanup
   after :finishing, :restart
-  after :publishing, :restart
 end
 ```
 

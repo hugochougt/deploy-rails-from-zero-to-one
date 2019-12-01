@@ -1,6 +1,6 @@
 # Summary
 
-* [README](README.md)
+* [Introduction](README.md)
 * [Tech Stack](tech-stack.md)
 * [Create Rails App](create-rails-app.md)
 * [Blog Feature](blog-feature.md)
@@ -8,3 +8,4 @@
 * [Setup Server](setup-server.md)
 * [Config Capistrano](config-capistrano.md)
 * [Config SSL](config-ssl.md)
+* [Continuous Development](continuous-development.md)

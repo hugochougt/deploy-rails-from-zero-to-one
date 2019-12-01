@@ -19,4 +19,4 @@
 
 ## Deployment
 
-- [Capistrano 3.x](https://github.com/capistrano/capistrano)
+- [Capistrano 3.11](https://github.com/capistrano/capistrano)

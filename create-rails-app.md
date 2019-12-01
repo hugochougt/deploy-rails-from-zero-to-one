@@ -1,6 +1,6 @@
 # Create Rails App
 
-要部署 Rails 应用，第一步就是先创建它。本文会创建一个用于演示的 Rails demo。
+要部署 Rails 应用，第一步就是先创建它。本文会创建一个用于演示的 Rails demo app。
 
 ## 步骤
 
@@ -45,6 +45,8 @@ $ git add .
 $ git commit -m 'Init project'
 ```
 
+此时你需要在 GitHub 创建一个仓库，并根据 GitHub 的操作提示，把代码推上到仓库里。然后再在 GitHub 上把你本地的 ssh public key 添加到 GitHub。
+
 我把 demo repo 放到了 GitHub 上 [rails-deployment-demo](https://github.com/zhaqiang/rails-deployment-demo)
 
-后续的部署脚本提交记录也会同步上去。
+后续的部署脚本提交记录也会同步到该仓库。
