@@ -9,3 +9,4 @@
 * [Config Capistrano](config-capistrano.md)
 * [Config SSL](config-ssl.md)
 * [Continuous Development](continuous-development.md)
+* [Cost](cost.md)
